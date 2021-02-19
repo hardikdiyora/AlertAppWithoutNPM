@@ -71,8 +71,8 @@ const server = http.createServer((req, res) => {
 })
 
 // Start the server and listen on port 3000
-server.listen(port = config.port, () => {
-    console.log(`The server is lstening on port ${port} in ${config.envName} now`)
+server.listen(config.port, () => {
+    console.log(`The server is lstening on port ${config.port} in ${config.envName} now`)
 })
 
 // Define the handlers
